@@ -1,14 +1,15 @@
-
-import sys
 # if not 'texar_repo' in sys.path:
 #   sys.path += ['texar_repo']
-from config import *
-from texar_repo.examples.bert.utils import data_utils, model_utils, tokenization
+import collections
+import csv
+import os
+
 # from texar_repo.examples.transformer.utils import data_utils, utils
 import tensorflow as tf
-import os
-import csv
-import collections
+
+from config import *
+from texar_repo.examples.bert.utils import tokenization
+
 
 class InputExample():
     """A single training/test example for simple sequence classification."""

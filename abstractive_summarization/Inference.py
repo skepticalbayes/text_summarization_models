@@ -1,19 +1,17 @@
-from flask import Flask, request, render_template
 # import requests
 # import json
 # from collections import OrderedDict
 # import os
 import numpy as np
+from flask import Flask, request
+
 # import tensorflow as tf
 
 app = Flask(__name__)
 
-import sys
-
 # if not 'texar_repo' in sys.path:
 #     sys.path += ['texar_repo']
 
-from config import *
 from model import *
 from preprocess import *
 

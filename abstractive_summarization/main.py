@@ -1,16 +1,9 @@
-import sys
-
 # if not 'texar_repo' in sys.path:
 #   sys.path += ['texar_repo']
-import tensorflow as tf
-import texar as tx
-import numpy as np
+import os
 import time
 
-from config import *
 from model import *
-
-import os
 
 
 def _train_epoch(sess, epoch, step, smry_writer):

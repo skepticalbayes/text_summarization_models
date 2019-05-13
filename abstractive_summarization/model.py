@@ -1,19 +1,18 @@
-from config import *
-from preprocess import file_based_input_fn_builder
 import os
-# import csv
-# import collections
-import sys
-# if not 'texar_repo' in sys.path:
-#   sys.path += ['texar_repo']
-from texar_repo.examples.bert.utils import data_utils, model_utils, tokenization
+
 # import importlib
 import tensorflow as tf
-import texar as tx 
+import texar as tx
+
+from config import *
+from preprocess import file_based_input_fn_builder
 from texar_repo.examples.bert import config_classifier as config_downstream
+# import csv
+# import collections
+# if not 'texar_repo' in sys.path:
+#   sys.path += ['texar_repo']
+from texar_repo.examples.bert.utils import model_utils, tokenization
 from texar_repo.texar.utils import transformer_utils
-from texar_repo.examples.transformer.utils import data_utils, utils
-from texar_repo.examples.transformer.bleu_tool import bleu_wrapper
 
 train_dataset = file_based_input_fn_builder(
             input_file=train_out_file,
